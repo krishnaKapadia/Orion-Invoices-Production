@@ -49,9 +49,9 @@ class Dashboard extends Component {
     axios.defaults.headers.common['company_id'] = this.props.currentUserCredentials.company_id;
 
     axios.all([
-      axios.get('http://localhost:4000/api/v1/clients'),
-      axios.get('http://localhost:4000/api/v1/invoices'),
-      axios.get('http://localhost:4000/api/v1/orders')
+      axios.get('https://orion-invoices-api.herokuapp.com/api/v1/clients'),
+      axios.get('https://orion-invoices-api.herokuapp.com/api/v1/invoices'),
+      axios.get('https://orion-invoices-api.herokuapp.com/api/v1/orders')
     ]).then(axios.spread( (clients, invoices, orders) => {
       clientSize = clients.data.clients.length;
       invoiceSize = invoices.data.invoices.length;

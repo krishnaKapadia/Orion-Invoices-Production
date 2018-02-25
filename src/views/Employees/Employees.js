@@ -33,7 +33,7 @@ class Employees extends Component {
   * Retrieves all employees from API via axios
   */
   getAllEmployees() {
-    axios.get("http://localhost:4000/api/v1/employees").then( (data) => {
+    axios.get("https://orion-invoices-api.herokuapp.com/api/v1/employees").then( (data) => {
       var employees = [];
       var employeeCount = 0;
 
@@ -69,7 +69,7 @@ class Employees extends Component {
     this.setState({ loadingButton: true });
 
     // Perform axios POST operation to API
-    axios.post("http://localhost:4000/api/v1/employees", newEmployee).then( (response) => {
+    axios.post("https://orion-invoices-api.herokuapp.com/api/v1/employees", newEmployee).then( (response) => {
       /**
        * Adds to local state to improve performace and removing the need to reload
          after submittion to get new database data

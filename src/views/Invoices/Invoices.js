@@ -33,7 +33,7 @@ class Invoices extends Component {
   * Retrieves all the invoices accociated with the business associated with the logged in user
   */
   getAllInvoices() {
-    axios.get("http://localhost:4000/api/v1/invoices").then( (data) => {
+    axios.get("https://orion-invoices-api.herokuapp.com/api/v1/invoices").then( (data) => {
       var invoices = [];
       var invoiceCount = 0;
       var inv_number = data.data.invoices[0].inv_number;

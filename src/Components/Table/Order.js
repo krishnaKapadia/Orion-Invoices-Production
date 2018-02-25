@@ -49,7 +49,7 @@ class Order extends Component {
     this.props.data.completed = !this.props.data.completed;
     this.setState({ loadingButton: true });
     // Update via API
-    axios.put(`http://localhost:4000/api/v1/orders/${this.props.data._id}`, this.props.data).then( (response) => {
+    axios.put(`https://orion-invoices-api.herokuapp.com/api/v1/orders/${this.props.data._id}`, this.props.data).then( (response) => {
       this.setState({ loadingButton: false });
       this.props.toggleCompleted(this.props.data._id, this.props.data.completed);
     }).catch((err) => {
@@ -65,7 +65,7 @@ class Order extends Component {
   */
   deleteOrder() {
     this.setState({ loadingButtonDelete: true });
-    axios.delete(`http://localhost:4000/api/v1/orders/${this.props.data._id}`).then( (response) => {
+    axios.delete(`https://orion-invoices-api.herokuapp.com/api/v1/orders/${this.props.data._id}`).then( (response) => {
       this.setState({ loadingButtonDelete: false });
       toast.success("Order deleted!", {
         position: toast.POSITION.BOTTOM_RIGHT
@@ -86,7 +86,7 @@ class Order extends Component {
   editOrder(o) {
     o.preventDefault();
     this.setState({ loadingButton: true });
-    axios.put(`http://localhost:4000/api/v1/orders/${this.props.data._id}`, this.state.data).then( (response) => {
+    axios.put(`https://orion-invoices-api.herokuapp.com/api/v1/orders/${this.props.data._id}`, this.state.data).then( (response) => {
       this.setState({ loadingButton: false });
       this.toggleEdit();
       this.props.updateOrder(this.props.data._id, this.state.data);

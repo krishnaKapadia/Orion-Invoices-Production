@@ -146,7 +146,7 @@ class NewOrder extends Component {
     var props = this.props;
 
     // Post to API via axios
-    axios.post("http://localhost:4000/api/v1/orders", newOrder).then( (response) => {
+    axios.post("https://orion-invoices-api.herokuapp.com/api/v1/orders", newOrder).then( (response) => {
       this.setState({ loadingButton: false });
       // TODO toast doesnt trigger as we are redirected before it has a change to show
       toast.success("Order Created Successfully!", {

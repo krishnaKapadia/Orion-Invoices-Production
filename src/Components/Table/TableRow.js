@@ -39,7 +39,7 @@ class TableRow extends Component {
   deleteClient() {
     this.setState({ loadingButtonDelete: true });
 
-    axios.delete(`http://localhost:4000/api/v1/clients/${this.props.clientId}`).then( (response) => {
+    axios.delete(`https://orion-invoices-api.herokuapp.com/api/v1/clients/${this.props.clientId}`).then( (response) => {
       this.setState({ loadingButtonDelete: false });
       toast.success("Client deleted!", {
         position: toast.POSITION.BOTTOM_RIGHT
@@ -78,7 +78,7 @@ class TableRow extends Component {
 
     this.setState({ loadingButton: true });
 
-    axios.put(`http://localhost:4000/api/v1/clients/${this.props.clientId}`, newClient).then( (response) => {
+    axios.put(`https://orion-invoices-api.herokuapp.com/api/v1/clients/${this.props.clientId}`, newClient).then( (response) => {
       this.setState({ loadingButton: false });
 
       toast.success("Client updated!", {
@@ -100,7 +100,7 @@ class TableRow extends Component {
   */
   deleteEmployee(e) {
     this.setState({ loadingButtonDelete: true });
-    axios.delete(`http://localhost:4000/api/v1/employees/${this.props.employeeId}`).then( (response) => {
+    axios.delete(`https://orion-invoices-api.herokuapp.com/api/v1/employees/${this.props.employeeId}`).then( (response) => {
       this.setState({ loadingButtonDelete: false });
       toast.success("Employee deleted!", {
         position: toast.POSITION.BOTTOM_RIGHT
@@ -135,7 +135,7 @@ class TableRow extends Component {
 
     this.setState({ loadingButton: true });
     // Perform axios POST operation to API
-    axios.put(`http://localhost:4000/api/v1/employees/${this.props.employeeId}`, newEmployee).then( (response) => {
+    axios.put(`https://orion-invoices-api.herokuapp.com/api/v1/employees/${this.props.employeeId}`, newEmployee).then( (response) => {
       this.setState({ loadingButton: false });
       toast.success("Employee updated!", {
         position: toast.POSITION.BOTTOM_RIGHT
@@ -158,7 +158,7 @@ class TableRow extends Component {
     const data = this.props.data;
     data.paid = true;
     this.setState({ loadingButton: true });
-    axios.put(`http://localhost:4000/api/v1/invoices/${data._id}`, data).then((response) => {
+    axios.put(`https://orion-invoices-api.herokuapp.com/api/v1/invoices/${data._id}`, data).then((response) => {
       this.setState({ loadingButton: false });
       this.props.history.push('/invoices');
     }).catch((err) => {

@@ -34,7 +34,7 @@ class Login extends Component {
       password: data.get("password")
     }
 
-    axios.post("http://localhost:4000/api/v1/users/login", userCredentials).then((response) => {
+    axios.post("https://orion-invoices-api.herokuapp.com/api/v1/users/login", userCredentials).then((response) => {
       if(response.data.result) {
 
         this.props.setCurrentUserCredentials(response.data.data);

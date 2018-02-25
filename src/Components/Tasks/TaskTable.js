@@ -46,7 +46,7 @@ class TaskTable extends Component {
   * Retrieves all the users tasks from the backend through axios
   */
   getAllTasks() {
-    const result = axios.get("http://localhost:4000/api/v1/tasks").then( (data) => {
+    const result = axios.get("https://orion-invoices-api.herokuapp.com/api/v1/tasks").then( (data) => {
       var tasks = [];
 
       // TODO change response to return data.data.tasks
@@ -70,7 +70,7 @@ class TaskTable extends Component {
     var tasks = this.state.tasks;
     const newTask = { desc: this.state.newTask };
 
-    axios.post("http://localhost:4000/api/v1/tasks", newTask).then( (response) => {
+    axios.post("https://orion-invoices-api.herokuapp.com/api/v1/tasks", newTask).then( (response) => {
       /**
        * Adds to local state to improve performace and removing the need to reload
          after submittion to get new database data
@@ -99,7 +99,7 @@ class TaskTable extends Component {
     var tasks = this.state.tasks;
 
     // Removal request to backend API
-    axios.delete(`http://localhost:4000/api/v1/tasks/${taskId}`).then( (response) => {
+    axios.delete(`https://orion-invoices-api.herokuapp.com/api/v1/tasks/${taskId}`).then( (response) => {
 
       toast.success("Task Completed", {
         position: toast.POSITION.BOTTOM_RIGHT

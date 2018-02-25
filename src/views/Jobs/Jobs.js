@@ -34,7 +34,7 @@ class Jobs extends Component {
   * Retrieves all the invoices accociated with the business associated with the logged in user
   */
   getAllOrders() {
-    axios.get("http://localhost:4000/api/v1/orders").then((data) => {
+    axios.get("https://orion-invoices-api.herokuapp.com/api/v1/orders").then((data) => {
       var orders = [];
       var currentOrderCount = 0;
       var completedOrderCount = 0;

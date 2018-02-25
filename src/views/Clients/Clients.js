@@ -40,7 +40,7 @@ class Clients extends Component {
    * Retrieves all the clients associated with the user from the backend
    */
   getAllClients() {
-    const result = axios.get("http://localhost:4000/api/v1/clients").then( (data) => {
+    const result = axios.get("https://orion-invoices-api.herokuapp.com/api/v1/clients").then( (data) => {
       var clients = [];
       var clientCount = 0;
       data.data.clients.map( (client) => {
@@ -92,7 +92,7 @@ class Clients extends Component {
     }
     this.setState({ loadingButton: true });
     // Perform axios POST operation
-    axios.post("http://localhost:4000/api/v1/clients", newClient).then( (response) => {
+    axios.post("https://orion-invoices-api.herokuapp.com/api/v1/clients", newClient).then( (response) => {
       /**
        * Adds to local state to improve performace and removing the need to reload
          after submittion to get new database data

@@ -226,7 +226,7 @@ class NewInvoice extends Component {
     var props = this.props;
 
     // Post to API via axios
-    axios.post("http://localhost:4000/api/v1/invoices", newInvoice).then( (response) => {
+    axios.post("https://orion-invoices-api.herokuapp.com/api/v1/invoices", newInvoice).then( (response) => {
       this.setState({ newInvoice });
 
       toast.success("Invoice created!", {

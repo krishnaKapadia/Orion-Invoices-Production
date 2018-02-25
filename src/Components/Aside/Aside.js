@@ -44,7 +44,7 @@ class Aside extends Component {
       inv_number: parseFloat(data.get("inv_number"))
     }
 
-    axios.put(`http://localhost:4000/api/v1/companies/${this.props.currentUserCredentials.company_id}`, packet).then((response) => {
+    axios.put(`https://orion-invoices-api.herokuapp.com/api/v1/companies/${this.props.currentUserCredentials.company_id}`, packet).then((response) => {
       var credentials = this.props.currentUserCredentials;
       credentials.inv_number = packet.inv_number + 1;
       console.log(this.props.currentUserCredentials);

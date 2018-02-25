@@ -47,7 +47,7 @@ class Profile extends Component {
     }
 
     const user_id = this.props.currentUserCredentials._id;
-    axios.put(`http://localhost:4000/api/v1/users/${user_id}`, information).then((response) => {
+    axios.put(`https://orion-invoices-api.herokuapp.com/api/v1/users/${user_id}`, information).then((response) => {
       this.setState({ loadingButton: false });
       this.toggle();
       toast.success("Profile Saved!", {
