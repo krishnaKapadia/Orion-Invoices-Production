@@ -1,0 +1,25 @@
+/*!
+ * Orion Invoices - 2017
+ * @version v1.0
+ */
+
+// Override Boostrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap source files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Override core variables
+@import "core-variables";
+
+// Import core styles
+@import "core/core";
+
+// Custom styles
+@import "custom";
+
+// Invoice style
+@import "invoice";
+
+// Login style
+@import "login";

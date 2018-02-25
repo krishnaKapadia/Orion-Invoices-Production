@@ -1,0 +1,123 @@
+.invoiceCard {
+  // width: 80%;
+  // margin-left: auto;
+  // margin-right: auto;
+}
+.invoice-container {
+  // border: 2px black solid;
+  // background-color: red;
+  width: inherit;
+  // max-width: 600px;
+  margin: 0px auto;
+  min-height: 840px;
+  // height: 29.7cm;
+  position: relative;
+}
+
+.invoiceHeader {
+  margin-bottom: 20px;
+}
+
+.invoiceClientDetails {
+  margin-bottom: 20px;
+}
+
+.invoiceTableRow {
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding-bottom: auto;
+}
+
+.invoiceFooter {
+  // width: 80%;
+  margin-top: 20px;
+  // position: absolute;
+  text-align: center;
+  // bottom: 0;
+}
+
+.invoiceInput {
+  margin-bottom: 5px;
+}
+
+// Table formatting
+.invoiceTable td, th {
+  text-align: center;
+}
+
+// Removes the number arrows
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+    margin: 0;
+    // padding: 0;
+}
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .tableInput::-webkit-input-placeholder { /* WebKit browsers */
+        color: transparent;
+    }
+    .tableInput:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color: transparent;
+    }
+    .tableInput::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color: transparent;
+    }
+   .tableInput :-ms-input-placeholder { /* Internet Explorer 10+ */
+       color: transparent;
+    }
+}
+
+
+// Print format
+@media print {
+
+  @page {
+    size: A4;
+    margin-top: -1cm;
+  }
+
+  // Hide everything
+  .app-header, .sidebar, .aside-menu, .app-footer, .breadcrumb, .noPrint {
+    display: none;
+  }
+
+  .invoiceCard {
+    border-style: none !important;
+    margin: 0cm !important;
+    padding: 0cm !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  // Reduces table row heights
+  tr, td {
+    padding: 0.2cm 0 !important;
+  }
+
+  // Show invoice area
+  .invoice-container {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0cm !important;
+    padding: 0cm !important;
+  }
+
+  .invoiceFooter {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 90% !important;
+    margin-bottom: 1cm !important;
+  }
+
+
+}

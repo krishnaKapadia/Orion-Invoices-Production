@@ -1,0 +1,205 @@
+// Loading spinner styles
+.loadingSpinner {
+  position:absolute; top:50%; left:50%;
+  display:table-cell;
+  -ms-transform: scale(2) rotate(45deg); /* IE 9 */
+  -webkit-transform: scale(2) rotate(45deg); /* Safari */
+  transform: scale(2) rotate(45deg);
+}
+
+.red{
+  margin-top: -20px;
+  padding-top: 0;
+  color: red;
+}
+
+.usernameContainer {
+  padding-right: 50%;
+  padding-left: 10%;
+}
+.username {
+  border-left: 2px solid gray;
+  padding-left: 40%;
+  width: 70%;
+}
+
+.smallInputGroup {
+  height: 25px;
+}
+
+.smallButton {
+  background-color: transparent;
+}
+
+.darken {
+  position: relative;
+  height: 70vh;
+}
+
+.taskLoadingContainer {
+  position: relative;
+  height: 10vh;
+}
+
+.taskLoadingSpinner {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  display: inline-block;
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari */
+  transform: scale(1);
+}
+
+.inline {
+  float: right;
+}
+
+.dataLoadingSpinner {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  display: inline-block;
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari */
+  transform: scale(1);
+}
+
+.centerSpinner {
+  -ms-transform: scale(5) rotate(45deg); /* IE 9 */
+  -webkit-transform: scale(5) rotate(45deg); /* Safari */
+  transform: scale(5) rotate(45deg);
+}
+
+// Other random styles
+
+.paddingLeft {
+  margin-left: 10px;
+}
+
+.paddingRight {
+  margin-right: 10px;
+}
+
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: $blue;
+}
+
+.blueSquare {
+  background-color: $blue;
+}
+
+.greenSquare {
+  background-color: #1abc9c;
+}
+
+.centerText {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.profileBox {
+  // min-height: 200px;
+  // height: 80%;
+}
+
+// SIDEBAR COLORS
+.smallSquare {
+
+}
+
+.themePickerRow {
+  width: 60%;
+}
+
+.sidebar {
+  background-color: #1abc9c;
+}
+
+.sidebar .nav-link.active, .sidebar .navbar .active.dropdown-toggle, .navbar .sidebar .active.dropdown-toggle {
+  background-color: #16a085;
+}
+
+.nav-link:hover {
+  background-color: White
+}
+
+.cardButton {
+  background-color: red;
+}
+
+.addButton {
+  color: white;
+}
+
+th h3 {
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.fullWidthButton {
+  width: 100%;
+}
+
+.topButton {
+  margin-bottom: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.linkCard:hover {
+  text-decoration: none;
+  color: $blue;
+  font-size: 20px;
+}
+
+.footer {
+  padding-top: 20px;
+  border-top: 1px grey solid;
+  // margin: 0px auto;
+  // font-size: 10vh;
+}
+
+.rightBox {
+  text-align: right;
+}
+
+.leftBox {
+  text-align: left;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.test {
+  width: 100%;
+  display: inline-block;
+  overflow: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.noBox {
+  border: none;
+}
+
+.totals {
+  padding-top: 10px;
+}
