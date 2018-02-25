@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Order from '../../components/Table/Order';
+import Order from '../../Components/Table/Order';
 import { NavLink } from 'react-router-dom';
 import {
   Card, CardHeader, CardBody, Row, Col, Button,

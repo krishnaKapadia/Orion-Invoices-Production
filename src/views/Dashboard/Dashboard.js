@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TaskTable from '../../components/Tasks/TaskTable';
-import LineGraph from '../../components/Graphs/LineGraph';
+import TaskTable from '../../Components/Tasks/TaskTable';
+import LineGraph from '../../Components/Graphs/LineGraph';
 import { NavLink } from 'react-router-dom';
 import {
   Row,

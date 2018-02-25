@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TableRow from "../../components/Table/TableRow";
+import TableRow from "../../Components/Table/TableRow";
 import {
   Row, Col, Card, CardHeader,  CardBody, Button, Table,
   Modal, ModalHeader, ModalBody, ModalFooter, Form, Input, FormGroup, Label,

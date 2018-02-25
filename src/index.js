@@ -21,7 +21,7 @@ import './Style/animation.css';
 
 // Containers
 import Full from './containers/Full/'
-import Authenticate from './components/Authentication/Authenticate';
+import Authenticate from './Components/Authentication/Authenticate';
 import Login from './views/Login';
 
 import { persistReducer, persistStore } from 'redux-persist';

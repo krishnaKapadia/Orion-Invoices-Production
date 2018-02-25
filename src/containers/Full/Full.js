@@ -3,11 +3,11 @@ import {Link, Switch, Route, Redirect} from 'react-router-dom';
 import {Container} from 'reactstrap';
 import { connect } from 'react-redux';
 
-import Header from '../../components/Header/';
-import Sidebar from '../../components/Sidebar/';
-import Breadcrumb from '../../components/Breadcrumb/';
-import Aside from '../../components/Aside/';
-import Footer from '../../components/Footer/';
+import Header from '../../Components/Header/';
+import Sidebar from '../../Components/Sidebar/';
+import Breadcrumb from '../../Components/Breadcrumb/';
+import Aside from '../../Components/Aside/';
+import Footer from '../../Components/Footer/';
 
 import Dashboard from '../../views/Dashboard/';
 import Profile from '../../views/Profile/Profile';

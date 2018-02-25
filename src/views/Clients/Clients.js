@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import TableRow from "../../components/Table/TableRow";
-import AddClientModal from "../../components/Modals/AddClientModal";
+import TableRow from "../../Components/Table/TableRow";
+import AddClientModal from "../../Components/Modals/AddClientModal";
 import {
   Row, Col, Card, CardHeader,  CardBody, Button, Table,
   Modal, ModalHeader, ModalBody, ModalFooter, Form, Input, FormGroup, Label,

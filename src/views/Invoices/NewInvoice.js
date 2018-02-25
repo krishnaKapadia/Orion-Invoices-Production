@@ -4,7 +4,7 @@ import {
   Table, Input, Button, Form
 } from 'reactstrap';
 import { NavLink, withRouter } from 'react-router-dom';
-import { formatToPrice } from '../../Utils/utils';
+import { formatToPrice } from '../../Utils/Utils';
 import moment from 'moment';
 import axios from 'axios';
 import PrintProvider, { Print, NoPrint } from 'react-easy-print';

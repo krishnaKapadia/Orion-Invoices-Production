@@ -2,9 +2,9 @@
   "name": "OrionInvoices",
   "version": "1.0.0",
   "description": "Orion Invoices, Client and Invoice management tool",
-  "author": "Orion Technology",
+  "author": "Orion Software",
   "homepage": "http://krishnakapadia.com",
-  "copyright": "Copyright 2017 Orion Technology",
+  "copyright": "Copyright 2017 Orion Software",
   "license": "MIT",
   "private": true,
   "devDependencies": {
