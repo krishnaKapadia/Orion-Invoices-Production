@@ -90,7 +90,7 @@ class Login extends Component {
 
                     <Form onSubmit={this.handleSubmit}>
                       <InputGroup className="mb-3">
-                        <InputGroupAddon><i className="icon-user"></i></InputGroupAddon>
+                        <InputGroupAddon className='input-group-prepend'><i className="icon-user input-group-text"></i></InputGroupAddon>
                         { !this.state.invalid_username &&
                           <Input type="text" placeholder="Username" name="username" required/>
                         }
