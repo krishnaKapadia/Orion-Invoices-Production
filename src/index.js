@@ -30,12 +30,12 @@ import storage from 'redux-persist/lib/storage'; // defaults to localStorage for
 import reduxReset from 'redux-reset';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 
-const createReduxStore = compose(applyMiddleware(), reduxReset(), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())(createStore);
+const createReduxStore = compose(applyMiddleware(), reduxReset())(createStore);
 const history = createBrowserHistory();
 
 // Persisting redux state on refresh
 const persistedReducer = persistReducer({ key: 'root', storage, stateReconciler: autoMergeLevel2 }, rootReducer);
-var store = createReduxStore(persistedReducer, compose( reduxReset(), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
+var store = createReduxStore(persistedReducer, compose( reduxReset()))
 var persistor = persistStore(store)
 
 ReactDOM.render((

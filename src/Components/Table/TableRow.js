@@ -267,7 +267,7 @@ class TableRow extends Component {
 
                   <FormGroup>
                     <Label>Hourly Rate: </Label>
-                    <Input type="number" name="employeeRate" defaultValue={this.props.employeeRate} />
+                    <Input type="number" name="employeeRate" step="0.01" defaultValue={this.props.employeeRate} />
                   </FormGroup>
 
                   <FormGroup>
