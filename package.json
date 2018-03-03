@@ -71,7 +71,9 @@
     "start": "forever server.js",
     "build": "webpack -p --progress --env.production",
     "postinstall": "webpack -p --progress --env.production",
-    "clean": "rimraf ./build"
+    "clean": "rimraf ./build",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;",
+    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
   },
   "engines": {
     "node": ">= 6.0.0",
