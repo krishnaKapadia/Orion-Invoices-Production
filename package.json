@@ -38,9 +38,11 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "babel-plugin-transform-remove-console": "^6.9.0",
     "bootstrap": "4.0.0-beta.2",
     "chart.js": "^2.7.0",
     "font-awesome": "^4.7.0",
+    "forever": "^0.15.3",
     "glamor": "^2.20.40",
     "history": "4.7.2",
     "moment": "^2.20.1",
@@ -67,8 +69,8 @@
   },
   "scripts": {
     "start": "forever server.js",
-    "build": "webpack -p --progress --env.prod",
-    "postinstall": "webpack -p --progress --env.prod",
+    "build": "webpack -p --progress --env.production",
+    "postinstall": "webpack -p --progress --env.production",
     "clean": "rimraf ./build"
   },
   "engines": {
