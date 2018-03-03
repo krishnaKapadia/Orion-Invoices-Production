@@ -2,10 +2,5 @@
   "presets": [
     ["react"], ["env"], ["stage-1"]
   ],
-  "plugins": ["transform-object-rest-spread", "transform-class-properties"],
-  "env": {
-    "production": {
-      "plugins": ["transform-remove-console"]
-    }
-  }
+  "plugins": ["transform-object-rest-spread", "transform-class-properties", "transform-remove-console"]
 }
