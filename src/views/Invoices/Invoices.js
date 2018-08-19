@@ -36,7 +36,7 @@ class Invoices extends Component {
     axios.get("https://orion-invoices-api.herokuapp.com/api/v1/invoices").then( (data) => {
       var invoices = [];
       var invoiceCount = 0;
-      var inv_number = data.data.invoices[0].inv_number;
+      var inv_number = (data.data.invoices.length > 0) ? data.data.invoices[0].inv_number : 0;
 
       data.data.invoices.map( (invoice) => {
         var date = new Date(invoice.date);

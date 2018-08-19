@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Orion Invoices, Client and Invoice management tool",
   "author": "Orion Software",
-  "homepage": "http://krishnakapadia.com",
+  "homepage": "http://orioninvoices.herokuapp.com",
   "copyright": "Copyright 2017 Orion Software",
   "license": "MIT",
   "private": true,
@@ -40,7 +40,9 @@
     "axios": "^0.17.1",
     "bootstrap": "4.0.0-beta.2",
     "chart.js": "^2.7.0",
+    "cross-env": "^5.1.3",
     "font-awesome": "^4.7.0",
+    "forever": "^0.15.3",
     "glamor": "^2.20.40",
     "history": "4.7.2",
     "moment": "^2.20.1",
@@ -69,6 +71,7 @@
     "dev": "webpack -d --progress --watch --profile --json > compilation-stats.json --env.dev",
     "start": "webpack-dev-server --progress --colors --inline --env.dev",
     "build": "webpack -p --progress --env.prod",
+    "start-prod": "cross-env NODE_ENV=production && forever server.js",
     "clean": "rimraf ./build"
   },
   "engines": {
